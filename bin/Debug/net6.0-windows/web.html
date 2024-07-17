@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Decision Tree</title>
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+</head>
+<body>
+<div class='container mt-5'>
+<h1>Decision Tree</h1>
+<ul class='list-group'>
+<li class='list-group-item'>
+    Brunova_kariera
+    <ul class='list-group mt-2'>
+    <li class='list-group-item'>
+        Športno_upokoji
+        <ul class='list-group mt-2'>
+        <li class='list-group-item'>
+            789,00 EUR
+        </li>
+        </ul>
+    </li>
+    <li class='list-group-item'>
+        Ostane_v_trenutni_ekipi
+        <ul class='list-group mt-2'>
+        <li class='list-group-item'>
+            845,00 EUR
+        </li>
+        </ul>
+    </li>
+    <li class='list-group-item'>
+        Prehod_v_drugo_ekipo
+        <ul class='list-group mt-2'>
+        <li class='list-group-item'>
+            Brez_poškodbe (50%)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                1300,00 EUR
+            </li>
+            </ul>
+        </li>
+        <li class='list-group-item'>
+            Manjša_poskodba (30%)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                650,00 EUR
+            </li>
+            </ul>
+        </li>
+        <li class='list-group-item'>
+            Hujša_poskodba (20%)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                100,00 EUR
+            </li>
+            </ul>
+        </li>
+        </ul>
+    </li>
+    <li class='list-group-item'>
+        Caka_na_dodatne_ponudbe
+        <ul class='list-group mt-2'>
+        <li class='list-group-item'>
+            Slaba_ponudba (40%)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                Manjša_poskodba (30%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    600,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Brez_poškodbe (50%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    300,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Hujša_poskodba (20%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    0 EUR
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+        <li class='list-group-item'>
+            Solidna_ponudba (45%)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                Brez_poškodbe (50%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    1400,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Manjša_poskodba (30%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    700,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Hujša_poskodba (20%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    0 EUR
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+        <li class='list-group-item'>
+            Odlicna_ponudba (15%)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                Brez_poškodbe (50%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    2440,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Manjša_poskodba (30%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    1220,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Hujša_poskodba (20%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    0 EUR
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+        </ul>
+    </li>
+    <li class='list-group-item'>
+        Športno_upokoji (789 EUR)
+        <ul class='list-group mt-2'>
+        <li class='list-group-item'>
+            789,00 EUR
+        </li>
+        <li class='list-group-item'>
+            789,00 EUR (0 EUR)
+        </li>
+        </ul>
+    </li>
+    <li class='list-group-item'>
+        Ostane_v_trenutni_ekipi (845 EUR)
+        <ul class='list-group mt-2'>
+        <li class='list-group-item'>
+            845,00 EUR
+        </li>
+        <li class='list-group-item'>
+            845,00 EUR (0 EUR)
+        </li>
+        </ul>
+    </li>
+    <li class='list-group-item'>
+        Prehod_v_drugo_ekipo (865 EUR)
+        <ul class='list-group mt-2'>
+        <li class='list-group-item'>
+            Brez_poškodbe (50%)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                1300,00 EUR
+            </li>
+            </ul>
+        </li>
+        <li class='list-group-item'>
+            Manjša_poskodba (30%)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                650,00 EUR
+            </li>
+            </ul>
+        </li>
+        <li class='list-group-item'>
+            Hujša_poskodba (20%)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                100,00 EUR
+            </li>
+            </ul>
+        </li>
+        <li class='list-group-item'>
+            Brez_poškodbe (50%) (1300 EUR)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                1300,00 EUR
+            </li>
+            <li class='list-group-item'>
+                1300,00 EUR (0 EUR)
+            </li>
+            </ul>
+        </li>
+        <li class='list-group-item'>
+            Manjša_poskodba (30%) (650 EUR)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                650,00 EUR
+            </li>
+            <li class='list-group-item'>
+                650,00 EUR (0 EUR)
+            </li>
+            </ul>
+        </li>
+        <li class='list-group-item'>
+            Hujša_poskodba (20%) (100 EUR)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                100,00 EUR
+            </li>
+            <li class='list-group-item'>
+                100,00 EUR (0 EUR)
+            </li>
+            </ul>
+        </li>
+        </ul>
+    </li>
+    <li class='list-group-item'>
+        Caka_na_dodatne_ponudbe (779,4 EUR)
+        <ul class='list-group mt-2'>
+        <li class='list-group-item'>
+            Slaba_ponudba (40%)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                Manjša_poskodba (30%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    600,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Brez_poškodbe (50%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    300,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Hujša_poskodba (20%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    0 EUR
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+        <li class='list-group-item'>
+            Solidna_ponudba (45%)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                Brez_poškodbe (50%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    1400,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Manjša_poskodba (30%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    700,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Hujša_poskodba (20%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    0 EUR
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+        <li class='list-group-item'>
+            Odlicna_ponudba (15%)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                Brez_poškodbe (50%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    2440,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Manjša_poskodba (30%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    1220,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Hujša_poskodba (20%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    0 EUR
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+        <li class='list-group-item'>
+            Slaba_ponudba (40%) (330 EUR)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                Manjša_poskodba (30%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    600,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Brez_poškodbe (50%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    300,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Hujša_poskodba (20%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    0 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Manjša_poskodba (30%) (600 EUR)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    600,00 EUR
+                </li>
+                <li class='list-group-item'>
+                    600,00 EUR (0 EUR)
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Brez_poškodbe (50%) (300 EUR)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    300,00 EUR
+                </li>
+                <li class='list-group-item'>
+                    300,00 EUR (0 EUR)
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Hujša_poskodba (20%) (0 EUR)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    0 EUR
+                </li>
+                <li class='list-group-item'>
+                    0 EUR (0 EUR)
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+        <li class='list-group-item'>
+            Solidna_ponudba (45%) (910 EUR)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                Brez_poškodbe (50%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    1400,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Manjša_poskodba (30%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    700,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Hujša_poskodba (20%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    0 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Brez_poškodbe (50%) (1400 EUR)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    1400,00 EUR
+                </li>
+                <li class='list-group-item'>
+                    1400,00 EUR (0 EUR)
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Manjša_poskodba (30%) (700 EUR)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    700,00 EUR
+                </li>
+                <li class='list-group-item'>
+                    700,00 EUR (0 EUR)
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Hujša_poskodba (20%) (0 EUR)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    0 EUR
+                </li>
+                <li class='list-group-item'>
+                    0 EUR (0 EUR)
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+        <li class='list-group-item'>
+            Odlicna_ponudba (15%) (1586 EUR)
+            <ul class='list-group mt-2'>
+            <li class='list-group-item'>
+                Brez_poškodbe (50%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    2440,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Manjša_poskodba (30%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    1220,00 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Hujša_poskodba (20%)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    0 EUR
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Brez_poškodbe (50%) (2440 EUR)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    2440,00 EUR
+                </li>
+                <li class='list-group-item'>
+                    2440,00 EUR (0 EUR)
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Manjša_poskodba (30%) (1220 EUR)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    1220,00 EUR
+                </li>
+                <li class='list-group-item'>
+                    1220,00 EUR (0 EUR)
+                </li>
+                </ul>
+            </li>
+            <li class='list-group-item'>
+                Hujša_poskodba (20%) (0 EUR)
+                <ul class='list-group mt-2'>
+                <li class='list-group-item'>
+                    0 EUR
+                </li>
+                <li class='list-group-item'>
+                    0 EUR (0 EUR)
+                </li>
+                </ul>
+            </li>
+            </ul>
+        </li>
+        </ul>
+    </li>
+    </ul>
+</li>
+</ul>
+</div>
+</body>
+</html>

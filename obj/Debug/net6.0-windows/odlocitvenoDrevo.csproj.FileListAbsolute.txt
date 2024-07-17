@@ -1,0 +1,17 @@
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\bin\Debug\net6.0-windows\odlocitvenoDrevo.exe
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\bin\Debug\net6.0-windows\odlocitvenoDrevo.deps.json
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\bin\Debug\net6.0-windows\odlocitvenoDrevo.runtimeconfig.json
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\bin\Debug\net6.0-windows\odlocitvenoDrevo.dll
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\bin\Debug\net6.0-windows\odlocitvenoDrevo.pdb
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\obj\Debug\net6.0-windows\odlocitvenoDrevo.AddNodeForm.resources
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\obj\Debug\net6.0-windows\odlocitvenoDrevo.MainForm.resources
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\obj\Debug\net6.0-windows\odlocitvenoDrevo.csproj.GenerateResource.cache
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\obj\Debug\net6.0-windows\odlocitvenoDrevo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\obj\Debug\net6.0-windows\odlocitvenoDrevo.AssemblyInfoInputs.cache
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\obj\Debug\net6.0-windows\odlocitvenoDrevo.AssemblyInfo.cs
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\obj\Debug\net6.0-windows\odlocitvenoDrevo.csproj.CoreCompileInputs.cache
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\obj\Debug\net6.0-windows\odlocitvenoDrevo.dll
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\obj\Debug\net6.0-windows\refint\odlocitvenoDrevo.dll
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\obj\Debug\net6.0-windows\odlocitvenoDrevo.pdb
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\obj\Debug\net6.0-windows\odlocitvenoDrevo.genruntimeconfig.cache
+C:\Users\Matic\Desktop\jost\odlocitvenoDrevo\obj\Debug\net6.0-windows\ref\odlocitvenoDrevo.dll

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "odlocitvenoDrevo", "odlocitvenoDrevo.csproj", "{66484916-1768-4C07-9494-87CEE0558302}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66484916-1768-4C07-9494-87CEE0558302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66484916-1768-4C07-9494-87CEE0558302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66484916-1768-4C07-9494-87CEE0558302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66484916-1768-4C07-9494-87CEE0558302}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7524C566-E004-4EF7-B015-3D3C501EC8CD}
+	EndGlobalSection
+EndGlobal
